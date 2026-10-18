@@ -1,0 +1,318 @@
+/* =========================================
+   MAGGI AT HOME — PROFESSIONAL DESIGN
+   Existing index.html remains unchanged
+   ========================================= */
+
+/* 1. Global styles */
+:root {
+  --maggi-yellow: #ffcc00;
+  --maggi-orange: #ff8c00;
+  --maggi-dark: #202020;
+  --maggi-text: #292929;
+  --maggi-muted: #666666;
+  --maggi-light: #fffaf0;
+  --maggi-white: #ffffff;
+  --maggi-green: #168447;
+  --maggi-radius: 16px;
+  --maggi-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--maggi-text);
+  background-color: var(--maggi-white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
+
+/* 2. Headings */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--maggi-dark);
+  line-height: 1.25;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+}
+
+/* 3. Header and navigation */
+header,
+nav {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+  z-index: 5;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #d97700;
+}
+
+/* 4. Hero section */
+.hero,
+.hero-section,
+#hero {
+  position: relative;
+  padding: clamp(36px, 7vw, 85px) 20px;
+  border-radius: 0 0 28px 28px;
+}
+
+.hero h1,
+.hero-section h1,
+#hero h1 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.hero p,
+.hero-section p,
+#hero p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.8;
+}
+
+/* 5. Buttons */
+button,
+.btn,
+.button,
+a.button,
+a.btn {
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+.button:hover,
+a.button:hover,
+a.btn:hover {
+  transform: translateY(-2px);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #d97700;
+  outline-offset: 3px;
+}
+
+/* 6. Booking form */
+form {
+  width: 100%;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+select,
+textarea {
+  max-width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #222222;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--maggi-orange);
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.12);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+label {
+  font-weight: 600;
+}
+
+/* 7. Cards and service sections */
+.card,
+.service-card,
+.feature-card,
+.review-card,
+.price-card {
+  border-radius: var(--maggi-radius);
+  box-shadow: var(--maggi-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.service-card:hover,
+.feature-card:hover,
+.review-card:hover,
+.price-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* 8. Images */
+.card img,
+.service-card img,
+.feature-card img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* 9. Price highlights */
+.price,
+.price-highlight {
+  color: #b45309;
+  font-weight: 800;
+}
+
+/* 10. WhatsApp links and buttons */
+a[href*="wa.me"],
+a[href*="whatsapp.com"] {
+  overflow-wrap: anywhere;
+}
+
+a[href*="wa.me"]:hover,
+a[href*="whatsapp.com"]:hover {
+  filter: brightness(0.94);
+}
+
+/* 11. Footer */
+footer {
+  margin-top: 40px;
+  padding: 28px 18px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* 12. Mobile optimization */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  header,
+  main,
+  section,
+  footer {
+    max-width: 100%;
+  }
+
+  h1 {
+    letter-spacing: -0.5px;
+  }
+
+  .hero,
+  .hero-section,
+  #hero {
+    padding: 35px 16px;
+  }
+
+  button,
+  .btn,
+  .button,
+  a.button,
+  a.btn {
+    max-width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+
+  img {
+    height: auto;
+  }
+}
+
+/* 13. Small phones */
+@media (max-width: 380px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero,
+  .hero-section,
+  #hero {
+    padding: 28px 12px;
+  }
+}
+
+/* 14. Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
