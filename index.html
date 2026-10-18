@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maggi at Home - Kandivali, Mumbai mein ghar par Maggi banwane ki service.">
+  <title>Maggi at Home | Kandivali Mumbai</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf0;
+      color: #222;
+    }
+
+    header {
+      background: #ffd21f;
+      padding: 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-bottom: 0;
+    }
+
+    nav {
+      background: #222;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 45px 18px;
+      background: #fff0b3;
+    }
+
+    .hero .emoji {
+      font-size: 75px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: bold;
+      color: #b42318;
+      margin: 20px 0;
+    }
+
+    .button {
+      display: inline-block;
+      border: none;
+      background: #168344;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 28px 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 14px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px #00000012;
+    }
+
+    label {
+      display: block;
+      margin-top: 14px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 7px;
+      border: 1px solid #bbb;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+
+    .submit-button {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .note {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      line-height: 1.6;
+    }
+
+    #languageButton {
+      background: white;
+      color: #222;
+      border: 1px solid #222;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍜 Maggi at Home</h1>
+    <p data-hi="आपके घर पर, आपके पसंदीदा स्वाद में!"
+       data-en="Your Favourite Maggi, Cooked at Your Home!">
+      आपके घर पर, आपके पसंदीदा स्वाद में!
+    </p>
+    <button id="languageButton" type="button" onclick="toggleLanguage()">
+      English
+    </button>
+  </header>
+
+  <nav>
+    <a href="#home" data-hi="होम" data-en="Home">होम</a>
+    <a href="#about" data-hi="हमारे बारे में" data-en="About">हमारे बारे में</a>
+    <a href="#booking" data-hi="बुकिंग" data-en="Booking">बुकिंग</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <div class="emoji">🍜</div>
+
+    <h2 data-hi="मैगी खाने का मन है?" data-en="Craving Maggi?">
+      मैगी खाने का मन है?
+    </h2>
+
+    <p data-hi="कांदिवली, मुंबई में घर पर मैगी बनवाने की सर्विस।"
+       data-en="Home Maggi cooking service in Kandivali, Mumbai.">
+      कांदिवली, मुंबई में घर पर मैगी बनवाने की सर्विस।
+    </p>
+
+    <div class="price">
+      ₹99
+      <span style="font-size:16px"
+        data-hi="प्रति बुकिंग की सर्विस फीस"
+        data-en="service fee per booking">
+        प्रति बुकिंग की सर्विस फीस
+      </span>
+    </div>
+
+    <a href="#booking" class="button"
+       data-hi="अभी बुक करें"
+       data-en="Book Now">अभी बुक करें</a>
+  </div>
+
+  <section id="about">
+    <h2 data-hi="हमारी सर्विस" data-en="Our Service">हमारी सर्विस</h2>
+
+    <div class="card">
+      <h3 data-hi="👨‍🍳 घर पर मैगी बनवाएँ"
+          data-en="👨‍🍳 Maggi Cooked at Home">
+        👨‍🍳 घर पर मैगी बनवाएँ
+      </h3>
+
+      <p data-hi="आपके घर आकर आपकी सामग्री से ताजी मैगी बनाने की सर्विस।"
+         data-en="Fresh Maggi cooked at your home using ingredients you provide.">
+        आपके घर आकर आपकी सामग्री से ताजी मैगी बनाने की सर्विस।
+      </p>
+
+      <p data-hi="📍 शुरुआती सर्विस एरिया: कांदिवली, मुंबई"
+         data-en="📍 Initial service area: Kandivali, Mumbai">
+        📍 शुरुआती सर्विस एरिया: कांदिवली, मुंबई
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-hi="💰 फीस में क्या शामिल है?"
+          data-en="💰 What does the fee cover?">
+        💰 फीस में क्या शामिल है?
+      </h3>
+
+      <p data-hi="₹99 मैगी बनाने की सर्विस फीस है। मैगी, मसाले, बर्तन और जरूरी सामग्री ग्राहक को उपलब्ध करानी होगी। आने-जाने की अतिरिक्त फीस हो तो बुकिंग कन्फर्म करने से पहले बताई जाएगी।"
+         data-en="₹99 is the cooking service fee. The customer must provide Maggi, seasonings, utensils and required ingredients. Any travel charge will be disclosed before confirming the booking.">
+        ₹99 मैगी बनाने की सर्विस फीस है। मैगी, मसाले, बर्तन और जरूरी सामग्री ग्राहक को उपलब्ध करानी होगी। आने-जाने की अतिरिक्त फीस हो तो बुकिंग कन्फर्म करने से पहले बताई जाएगी।
+      </p>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2 data-hi="🍜 मैगी बुक करें" data-en="🍜 Book Maggi">
+      🍜 मैगी बुक करें
+    </h2>
+
+    <div class="card">
+      <p data-hi="नीचे जानकारी भरें। WhatsApp पर बुकिंग का संदेश तैयार होगा। उसे भेजने के बाद बुकिंग की पुष्टि का इंतजार करें।"
+         data-en="Fill in your details below. A booking message will be prepared for WhatsApp. Send it and wait for booking confirmation.">
+        नीचे जानकारी भरें। WhatsApp पर बुकिंग का संदेश तैयार होगा। उसे भेजने के बाद बुकिंग की पुष्टि का इंतजार करें।
+      </p>
+
+      <form id="bookingForm">
+
+        <label for="customerName"
+          data-hi="आपका नाम"
+          data-en="Your Name">आपका नाम</label>
+
+        <input id="customerName" name="name"
+          type="text" autocomplete="name" required
+          maxlength="80" placeholder="अपना नाम लिखें">
+
+        <label for="customerPhone"
+          data-hi="मोबाइल नंबर"
+          data-en="Mobile Number">मोबाइल नंबर</label>
+
+        <input id="customerPhone" name="phone"
+          type="tel" autocomplete="tel" required
+          pattern="[0-9+\-\s]{10,16}"
+          maxlength="16" placeholder="मोबाइल नंबर लिखें">
+
+        <label for="customerArea"
+          data-hi="इलाका"
+          data-en="Area">इलाका</label>
+
+        <select id="customerArea" name="area" required>
+          <option value=""
+            data-hi="अपना इलाका चुनें"
+            data-en="Choose your area">अपना इलाका चुनें</option>
+          <option value="Kandivali East">Kandivali East</option>
+          <option value="Kandivali West">Kandivali West</option>
+          <option value="Other">Other / अन्य</option>
+        </select>
+
+        <label for="customerAddress"
+          data-hi="घर या फ्लैट का पता"
+          data-en="Home or Flat Address">घर या फ्लैट का पता</label>
+
+        <textarea id="customerAddress" name="address"
+          rows="3" required maxlength="300"
+          autocomplete="street-address"
+          placeholder="पूरा पता लिखें"></textarea>
+
+        <label for="bookingDate"
+          data-hi="बुकिंग की तारीख"
+          data-en="Booking Date">बुकिंग की तारीख</label>
+
+        <input id="bookingDate" name="date"
+          type="date" required>
+
+        <label for="bookingTime"
+          data-hi="बुकिंग का समय"
+          data-en="Booking Time">बुकिंग का समय</label>
+
+        <select id="bookingTime" name="time" required>
+          <option value=""
+            data-hi="समय चुनें"
+            data-en="Choose a time">समय चुनें</option>
+          <option>10:00 AM - 12:00 PM</option>
+          <option>12:00 PM - 2:00 PM</option>
+          <option>2:00 PM - 4:00 PM</option>
+          <option>4:00 PM - 6:00 PM</option>
+          <option>6:00 PM - 8:00 PM</option>
+          <option>8:00 PM - 9:00 PM</option>
+        </select>
+
+        <label for="servings"
+          data-hi="कितने लोगों के लिए?"
+          data-en="How many people?">कितने लोगों के लिए?</label>
+
+        <select id="servings" name="servings" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4+</option>
+        </select>
+
+        <label for="notes"
+          data-hi="अतिरिक्त जानकारी (वैकल्पिक)"
+          data-en="Extra Details (Optional)">
+          अतिरिक्त जानकारी (वैकल्पिक)
+        </label>
+
+        <textarea id="notes" name="notes"
+          rows="2" maxlength="200"
+          placeholder="कोई जरूरी जानकारी"></textarea>
+
+        <p><strong>Service Fee / सर्विस फीस: ₹99</strong></p>
+        <p class="note"
+          data-hi="भुगतान मैगी बनने के बाद होगा। बुकिंग भेजना पुष्टि नहीं है। पहले WhatsApp पर उपलब्धता और फीस की पुष्टि करें।"
+          data-en="Payment is due after cooking. Sending a request does not confirm the booking. Confirm availability and charges on WhatsApp first.">
+          भुगतान मैगी बनने के बाद होगा। बुकिंग भेजना पुष्टि नहीं है। पहले WhatsApp पर उपलब्धता और फीस की पुष्टि करें।
+        </p>
+
+        <button class="button submit-button" type="submit"
+          data-hi="WhatsApp पर बुकिंग भेजें"
+          data-en="Send Booking on WhatsApp">
+          WhatsApp पर बुकिंग भेजें
+        </button>
+
+      </form>
+
+      <p class="note"
+        data-hi="आपकी जानकारी WhatsApp संदेश में शामिल होगी। संदेश भेजने से पहले उसे जाँच लें।"
+        data-en="Your details will be included in the WhatsApp message. Review it before sending.">
+        आपकी जानकारी WhatsApp संदेश में शामिल होगी। संदेश भेजने से पहले उसे जाँच लें।
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <strong>🍜 Maggi at Home</strong>
+    <p>Kandivali, Mumbai</p>
+    <p>© <span id="year"></span> Maggi at Home</p>
+  </footer>
+
+  <script>
+    // अपना बिजनेस WhatsApp नंबर बाद में यहाँ जोड़ें।
+    // भारत का नंबर 91 से शुरू करें, + या spaces के बिना।
+    const BUSINESS_WHATSAPP = "";
+
+    let currentLanguage = "hi";
+
+    function toggleLanguage() {
+      currentLanguage = currentLanguage === "hi" ? "en" : "hi";
+
+      document.documentElement.lang = currentLanguage;
+
+      document.querySelectorAll("[data-hi][data-en]").forEach(element => {
+        element.textContent = element.dataset[currentLanguage];
+      });
+
+      document.getElementById("languageButton").textContent =
+        currentLanguage === "hi" ? "English" : "हिंदी";
+    }
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const dateInput = document.getElementById("bookingDate");
+    const today = new Date();
+    const localToday = [
+      today.getFullYear(),
+      String(today.getMonth() + 1).padStart(2, "0"),
+      String(today.getDate()).padStart(2, "0")
+    ].join("-");
+
+    dateInput.min = localToday;
+
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!this.reportValidity()) return;
+
+      if (!BUSINESS_WHATSAPP) {
+        alert(
+          currentLanguage === "hi"
+            ? "वेबसाइट का फॉर्म तैयार है। WhatsApp बुकिंग चालू करने के लिए मालिक का WhatsApp नंबर जोड़ना बाकी है।"
+            : "The form is ready. The owner's WhatsApp number must be added to enable WhatsApp booking."
+        );
+        return;
+      }
+
+      const form = new FormData(this);
+
+      const message = [
+        "🍜 Maggi at Home - Booking Request",
+        "",
+        "Name: " + form.get("name"),
+        "Phone: " + form.get("phone"),
+        "Area: " + form.get("area"),
+        "Address: " + form.get("address"),
+        "Date: " + form.get("date"),
+        "Time: " + form.get("time"),
+        "People: " + form.get("servings"),
+        "Service Fee: ₹99",
+        "Extra Details: " + (form.get("notes") || "None"),
+        "",
+        "Please confirm availability and booking."
+      ].join("\n");
+
+      const whatsappURL =
+        "https://wa.me/" + BUSINESS_WHATSAPP +
+        "?text=" + encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+  </script>
+
+</body>
+</html>
